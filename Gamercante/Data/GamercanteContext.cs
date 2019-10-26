@@ -16,5 +16,7 @@ namespace Gamercante.Data
 
         public DbSet<Usuario> Usuario { get; set; }
 
+        public DbSet<Gamercante.Models.Game> Game { get; set; }
+
     }
 }
