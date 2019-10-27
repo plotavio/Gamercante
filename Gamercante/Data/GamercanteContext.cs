@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Gamercante.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Gamercante.Data
 {
-    public class GamercanteContext : DbContext
+    public class GamercanteContext : IdentityDbContext
     {
         public GamercanteContext(DbContextOptions<GamercanteContext> options)
             : base(options)
